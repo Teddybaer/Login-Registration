@@ -1,5 +1,6 @@
 #include "Account.h"
 #include <iostream>
+using namespace std;
 
 Account::Account(const std::string& usersfile) : filename(usersfile)
 {
