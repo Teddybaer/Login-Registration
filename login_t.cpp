@@ -1,4 +1,5 @@
 #include "Login.h"
+using namespace std;
 
 Login::Login(Account& AccountsP) : Accounts(AccountsP)
 {

@@ -1,5 +1,6 @@
 #include "Account.h"
 #include <iostream>
+using namespace std;
 
 Account::Account(const std::string& usersfile) : filename(usersfile)
 {
@@ -10,7 +11,7 @@ Account::Account(const std::string& usersfile) : filename(usersfile)
 		userd.close();
 	}
 
-	Admins.insert({ "Teddybaer", "test123" });
+	Admins.insert({ "Krushna", "122161" });
 
 	LeseUserfile();
 }

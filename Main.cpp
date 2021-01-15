@@ -1,6 +1,7 @@
 #include "Account.h"
 #include "Login.h"
 #include "Register.h"
+using namespace std;
 
 int main()
 {
@@ -12,36 +13,39 @@ int main()
 
 	while (true)
 	{
-		std::cin.sync(); std::cin.clear();
+		cin.sync(); 
+		cin.clear();
 		system("cls");
 		StartseiteMenu();
-		std::cout << "Ihre Wahl:";
-		std::cin >> auswahl;
+		cout << "Ihre Wahl:";
+		cin >> auswahl;
 
-		std::cin.sync(); std::cin.clear();
+		cin.sync(); 
+		cin.clear();
 
 		switch (auswahl)
 		{
 		case 1:
-			std::cout << "----------------Anmelden---------------" << std::endl;
+			cout << "----------------Anmelden---------------" << endl;
 			if (Logins.Anmelden())
 			{
 				Logins.Startseite();
 			}
 			else
 			{
-				std::cout << "Anmeldung war nicht erfolgerich..." << std::endl;
-				std::cin.get();
-				std::cin.sync(); std::cin.clear();
+				cout << "Anmeldung war nicht erfolgerich..." <<endl;
+				cin.get();
+				cin.sync(); 
+				cin.clear();
 			}
 			break;
 		case 2:
-			std::cout << "------------Registrieren---------------" << std::endl;
+			cout << "------------Registrieren---------------" <<endl;
 			Registers.Registrieren();
 			break;
 		case 3:
 			system("cls");
-			std::cout << "---------------Programm beenden------------------";
+			cout << "---------------Programm beenden------------------";
 			return 0;
 		default:
 			continue;
