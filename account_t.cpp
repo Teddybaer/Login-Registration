@@ -10,7 +10,7 @@ Account::Account(const std::string& usersfile) : filename(usersfile)
 		userd.close();
 	}
 
-	Admins.insert({ "Teddybaer", "test123" });
+	Admins.insert({ "Krushna", "122161" });
 
 	LeseUserfile();
 }
